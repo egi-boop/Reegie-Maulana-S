@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Website</title>
-    </head>
-    <body>
-        <h1>Welcome to My Website!</h1>
-            <p>This is the homepage of my website.</p>
-            </body>
-            </html>
-            
+  <title>Demokrasi Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Demokrasi Quiz</h1>
+    <p>Uji pengetahuanmu tentang demokrasi dan menjadi warga negara yang cerdas!</p>
+  </header>
+  <main>
+    <section class="quiz">
+      <h2 id="pertanyaan"></h2>
+      <ul id="jawaban">
+        <li><input type="radio" id="jawaban1" name="jawaban" value="A"><label for="jawaban1" id="label1"></label></li>
+        <li><input type="radio" id="jawaban2" name="jawaban" value="B"><label for="jawaban2" id="label2"></label></li>
+        <li><input type="radio" id="jawaban3" name="jawaban" value="C"><label for="jawaban3" id="label3"></label></li>
+        <li><input type="radio" id="jawaban4" name="jawaban" value="D"><label for="jawaban4" id="label4"></label></li>
+      </ul>
+      <button class="submit" id="submit">Submit</button>
+      <p id="hasil"></p>
+      <div class="progress">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
